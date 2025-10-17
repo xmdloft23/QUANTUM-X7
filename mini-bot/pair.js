@@ -39,9 +39,11 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610'
 };
 
-const octokit = new Octokit({ auth: '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' });
-const owner = 'Xmdloft23';
-const repo = 'session';
+const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN
+});
+const owner = process.env.GITHUB_REPO_OWNER;
+const repo = process.env.GITHUB_REPO_NAME;
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
