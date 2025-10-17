@@ -39,7 +39,7 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610'
 };
 
-const octokit = new Octokit({ auth: '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' });
+const octokit = new Octokit({ auth: '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' });
 const owner = 'XMDLOFT23';
 const repo = 'QUANTUM-X7';
 
