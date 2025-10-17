@@ -39,9 +39,9 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610'
 };
 
-const octokit = new Octokit({ auth: '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' });
-const owner = 'Xmdloft23';
-const repo = 'session';
+const octokit = new Octokit({ auth: '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' });
+const owner = 'QUANTUM-X7';
+const repo = 'SESSION';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
