@@ -39,9 +39,11 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610'
 };
 
-const octokit = new Octokit({ auth: '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' });
-const owner = 'XMDLOFT23';
-const repo = 'QUANTUM-X7';
+const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN
+});
+const owner = process.env.GITHUB_REPO_OWNER;
+const repo = process.env.GITHUB_REPO_NAME;
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
